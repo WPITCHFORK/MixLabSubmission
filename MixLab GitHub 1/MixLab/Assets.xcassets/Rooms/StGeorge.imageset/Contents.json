@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Nashville.StGeorge.1986CasavantFr.20160909.225329.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

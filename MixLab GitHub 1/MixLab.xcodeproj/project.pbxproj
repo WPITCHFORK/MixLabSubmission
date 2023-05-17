@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D05445B2A0AC8BF009C8055 /* MixLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05445A2A0AC8BF009C8055 /* MixLabApp.swift */; };
+		3D05445F2A0AC8C0009C8055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D05445E2A0AC8C0009C8055 /* Assets.xcassets */; };
+		3D0544622A0AC8C0009C8055 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0544612A0AC8C0009C8055 /* Preview Assets.xcassets */; };
+		3D0544692A0AC99E009C8055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544682A0AC99E009C8055 /* AppDelegate.swift */; };
+		3D05446C2A0AC9CF009C8055 /* MixerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05446B2A0AC9CF009C8055 /* MixerClass.swift */; };
+		3D05446F2A0ACA15009C8055 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D05446E2A0ACA15009C8055 /* AudioKit */; };
+		3D0544722A0ACA22009C8055 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0544712A0ACA22009C8055 /* AudioKitEX */; };
+		3D0544752A0ACA38009C8055 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0544742A0ACA38009C8055 /* AudioKitUI */; };
+		3D0544782A0ACA44009C8055 /* Controls in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0544772A0ACA44009C8055 /* Controls */; };
+		3D05447B2A0ACA50009C8055 /* Flow in Frameworks */ = {isa = PBXBuildFile; productRef = 3D05447A2A0ACA50009C8055 /* Flow */; };
+		3D05447E2A0ACA5F009C8055 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D05447D2A0ACA5F009C8055 /* SoundpipeAudioKit */; };
+		3D0544802A0ACA7B009C8055 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05447F2A0ACA7B009C8055 /* ButtonStyles.swift */; };
+		3D0544832A0ACAAD009C8055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0544822A0ACAAD009C8055 /* LaunchScreen.storyboard */; };
+		3D0544852A0ACABD009C8055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544842A0ACABD009C8055 /* ContentView.swift */; };
+		3D0544872A0ACAD3009C8055 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544862A0ACAD3009C8055 /* NewView.swift */; };
+		3D0544892A0ACAE4009C8055 /* NewView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544882A0ACAE4009C8055 /* NewView2.swift */; };
+		3D05448C2A0ACB00009C8055 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05448B2A0ACB00009C8055 /* LessonView.swift */; };
+		3D05448E2A0ACB0E009C8055 /* HoldingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05448D2A0ACB0E009C8055 /* HoldingView.swift */; };
+		3D0544902A0ACB1C009C8055 /* Lesson1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05448F2A0ACB1C009C8055 /* Lesson1.swift */; };
+		3D0544922A0ACB2A009C8055 /* Lesson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544912A0ACB2A009C8055 /* Lesson2.swift */; };
+		3D0544942A0ACB3C009C8055 /* Lesson12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544932A0ACB3C009C8055 /* Lesson12.swift */; };
+		3D0544972A0ACB69009C8055 /* MainMixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544962A0ACB69009C8055 /* MainMixerView.swift */; };
+		3D0544992A0ACB77009C8055 /* MixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544982A0ACB77009C8055 /* MixerView.swift */; };
+		3D05449B2A0ACB86009C8055 /* FaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05449A2A0ACB86009C8055 /* FaderView.swift */; };
+		3D05449D2A0ACB98009C8055 /* InstrumentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05449C2A0ACB98009C8055 /* InstrumentSelectView.swift */; };
+		3D0544A02A0ACBB1009C8055 /* BassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05449F2A0ACBB1009C8055 /* BassSheet.swift */; };
+		3D0544A22A0ACBBF009C8055 /* GuitarSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544A12A0ACBBF009C8055 /* GuitarSheet.swift */; };
+		3D0544A52A0ACBE3009C8055 /* GainSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544A42A0ACBE3009C8055 /* GainSheet.swift */; };
+		3D0544A72A0ACBFC009C8055 /* PanSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544A62A0ACBFC009C8055 /* PanSheet.swift */; };
+		3D0544A92A0ACC07009C8055 /* EQSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544A82A0ACC07009C8055 /* EQSheet.swift */; };
+		3D0544AB2A0ACC19009C8055 /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544AA2A0ACC19009C8055 /* BandView.swift */; };
+		3D0544AE2A0ACC75009C8055 /* LessonsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544AD2A0ACC75009C8055 /* LessonsButton.swift */; };
+		3D0544B02A0ACC88009C8055 /* FreePlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544AF2A0ACC88009C8055 /* FreePlayButton.swift */; };
+		3D0544B22A0ACC96009C8055 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544B12A0ACC96009C8055 /* SettingsButton.swift */; };
+		3D0544B42A0ACCA4009C8055 /* GamesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544B32A0ACCA4009C8055 /* GamesButton.swift */; };
+		3D0544B72A0ACCD4009C8055 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544B62A0ACCD4009C8055 /* SettingsView.swift */; };
+		3D0544BA2A0ACCF0009C8055 /* Game1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544B92A0ACCF0009C8055 /* Game1.swift */; };
+		3D0544BC2A0ACD0F009C8055 /* ComingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544BB2A0ACD0F009C8055 /* ComingSoon.swift */; };
+		3D0544BE2A0ACD27009C8055 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 3D0544BD2A0ACD27009C8055 /* Samples */; };
+		3D0544C02A0ACE48009C8055 /* LessonAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0544BF2A0ACE48009C8055 /* LessonAudioEngine.swift */; };
+		3D2D772D2A0D3CD700C4AAEC /* RoomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D772C2A0D3CD700C4AAEC /* RoomSheet.swift */; };
+		3D73415F2A0ADDF30004AEC4 /* LessonProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73415E2A0ADDF30004AEC4 /* LessonProgress.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D0544572A0AC8BF009C8055 /* MixLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D05445A2A0AC8BF009C8055 /* MixLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixLabApp.swift; sourceTree = "<group>"; };
+		3D05445E2A0AC8C0009C8055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D0544612A0AC8C0009C8055 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D0544682A0AC99E009C8055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D05446B2A0AC9CF009C8055 /* MixerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerClass.swift; sourceTree = "<group>"; };
+		3D05447F2A0ACA7B009C8055 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		3D0544822A0ACAAD009C8055 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D0544842A0ACABD009C8055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D0544862A0ACAD3009C8055 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		3D0544882A0ACAE4009C8055 /* NewView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView2.swift; sourceTree = "<group>"; };
+		3D05448B2A0ACB00009C8055 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		3D05448D2A0ACB0E009C8055 /* HoldingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingView.swift; sourceTree = "<group>"; };
+		3D05448F2A0ACB1C009C8055 /* Lesson1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1.swift; sourceTree = "<group>"; };
+		3D0544912A0ACB2A009C8055 /* Lesson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2.swift; sourceTree = "<group>"; };
+		3D0544932A0ACB3C009C8055 /* Lesson12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson12.swift; sourceTree = "<group>"; };
+		3D0544962A0ACB69009C8055 /* MainMixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMixerView.swift; sourceTree = "<group>"; };
+		3D0544982A0ACB77009C8055 /* MixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerView.swift; sourceTree = "<group>"; };
+		3D05449A2A0ACB86009C8055 /* FaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaderView.swift; sourceTree = "<group>"; };
+		3D05449C2A0ACB98009C8055 /* InstrumentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentSelectView.swift; sourceTree = "<group>"; };
+		3D05449F2A0ACBB1009C8055 /* BassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassSheet.swift; sourceTree = "<group>"; };
+		3D0544A12A0ACBBF009C8055 /* GuitarSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarSheet.swift; sourceTree = "<group>"; };
+		3D0544A42A0ACBE3009C8055 /* GainSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GainSheet.swift; sourceTree = "<group>"; };
+		3D0544A62A0ACBFC009C8055 /* PanSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanSheet.swift; sourceTree = "<group>"; };
+		3D0544A82A0ACC07009C8055 /* EQSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQSheet.swift; sourceTree = "<group>"; };
+		3D0544AA2A0ACC19009C8055 /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
+		3D0544AD2A0ACC75009C8055 /* LessonsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsButton.swift; sourceTree = "<group>"; };
+		3D0544AF2A0ACC88009C8055 /* FreePlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePlayButton.swift; sourceTree = "<group>"; };
+		3D0544B12A0ACC96009C8055 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		3D0544B32A0ACCA4009C8055 /* GamesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesButton.swift; sourceTree = "<group>"; };
+		3D0544B62A0ACCD4009C8055 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D0544B92A0ACCF0009C8055 /* Game1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game1.swift; sourceTree = "<group>"; };
+		3D0544BB2A0ACD0F009C8055 /* ComingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoon.swift; sourceTree = "<group>"; };
+		3D0544BD2A0ACD27009C8055 /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
+		3D0544BF2A0ACE48009C8055 /* LessonAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonAudioEngine.swift; sourceTree = "<group>"; };
+		3D2D772C2A0D3CD700C4AAEC /* RoomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSheet.swift; sourceTree = "<group>"; };
+		3D73415E2A0ADDF30004AEC4 /* LessonProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonProgress.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D0544542A0AC8BF009C8055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0544782A0ACA44009C8055 /* Controls in Frameworks */,
+				3D05447B2A0ACA50009C8055 /* Flow in Frameworks */,
+				3D05447E2A0ACA5F009C8055 /* SoundpipeAudioKit in Frameworks */,
+				3D05446F2A0ACA15009C8055 /* AudioKit in Frameworks */,
+				3D0544752A0ACA38009C8055 /* AudioKitUI in Frameworks */,
+				3D0544722A0ACA22009C8055 /* AudioKitEX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D05444E2A0AC8BF009C8055 = {
+			isa = PBXGroup;
+			children = (
+				3D0544682A0AC99E009C8055 /* AppDelegate.swift */,
+				3D0544592A0AC8BF009C8055 /* MixLab */,
+				3D0544582A0AC8BF009C8055 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D0544582A0AC8BF009C8055 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544572A0AC8BF009C8055 /* MixLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D0544592A0AC8BF009C8055 /* MixLab */ = {
+			isa = PBXGroup;
+			children = (
+				3D05445A2A0AC8BF009C8055 /* MixLabApp.swift */,
+				3D05446A2A0AC9BC009C8055 /* Models */,
+				3D05445E2A0AC8C0009C8055 /* Assets.xcassets */,
+				3D0544812A0ACA93009C8055 /* Views */,
+				3D0544BD2A0ACD27009C8055 /* Samples */,
+				3D0544602A0AC8C0009C8055 /* Preview Content */,
+			);
+			path = MixLab;
+			sourceTree = "<group>";
+		};
+		3D0544602A0AC8C0009C8055 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544612A0AC8C0009C8055 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D05446A2A0AC9BC009C8055 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D05446B2A0AC9CF009C8055 /* MixerClass.swift */,
+				3D05447F2A0ACA7B009C8055 /* ButtonStyles.swift */,
+				3D0544BF2A0ACE48009C8055 /* LessonAudioEngine.swift */,
+				3D73415E2A0ADDF30004AEC4 /* LessonProgress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D0544812A0ACA93009C8055 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544822A0ACAAD009C8055 /* LaunchScreen.storyboard */,
+				3D0544842A0ACABD009C8055 /* ContentView.swift */,
+				3D0544862A0ACAD3009C8055 /* NewView.swift */,
+				3D0544882A0ACAE4009C8055 /* NewView2.swift */,
+				3D0544BB2A0ACD0F009C8055 /* ComingSoon.swift */,
+				3D05448A2A0ACAED009C8055 /* Lessons */,
+				3D0544952A0ACB45009C8055 /* FreePlay */,
+				3D0544AC2A0ACC54009C8055 /* HomeViews */,
+				3D0544B52A0ACCC0009C8055 /* Settings */,
+				3D0544B82A0ACCE1009C8055 /* Games */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D05448A2A0ACAED009C8055 /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+				3D05448B2A0ACB00009C8055 /* LessonView.swift */,
+				3D05448D2A0ACB0E009C8055 /* HoldingView.swift */,
+				3D05448F2A0ACB1C009C8055 /* Lesson1.swift */,
+				3D0544912A0ACB2A009C8055 /* Lesson2.swift */,
+				3D0544932A0ACB3C009C8055 /* Lesson12.swift */,
+			);
+			path = Lessons;
+			sourceTree = "<group>";
+		};
+		3D0544952A0ACB45009C8055 /* FreePlay */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544962A0ACB69009C8055 /* MainMixerView.swift */,
+				3D0544982A0ACB77009C8055 /* MixerView.swift */,
+				3D05449A2A0ACB86009C8055 /* FaderView.swift */,
+				3D05449C2A0ACB98009C8055 /* InstrumentSelectView.swift */,
+				3D0544AA2A0ACC19009C8055 /* BandView.swift */,
+				3D05449E2A0ACB9F009C8055 /* InstrumentViews */,
+				3D0544A32A0ACBC9009C8055 /* ParameterSheets */,
+			);
+			path = FreePlay;
+			sourceTree = "<group>";
+		};
+		3D05449E2A0ACB9F009C8055 /* InstrumentViews */ = {
+			isa = PBXGroup;
+			children = (
+				3D05449F2A0ACBB1009C8055 /* BassSheet.swift */,
+				3D0544A12A0ACBBF009C8055 /* GuitarSheet.swift */,
+			);
+			path = InstrumentViews;
+			sourceTree = "<group>";
+		};
+		3D0544A32A0ACBC9009C8055 /* ParameterSheets */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544A42A0ACBE3009C8055 /* GainSheet.swift */,
+				3D0544A62A0ACBFC009C8055 /* PanSheet.swift */,
+				3D0544A82A0ACC07009C8055 /* EQSheet.swift */,
+				3D2D77322A0D52AC00C4AAEC /* InstrumentEQViews */,
+				3D2D772C2A0D3CD700C4AAEC /* RoomSheet.swift */,
+			);
+			path = ParameterSheets;
+			sourceTree = "<group>";
+		};
+		3D0544AC2A0ACC54009C8055 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544AD2A0ACC75009C8055 /* LessonsButton.swift */,
+				3D0544AF2A0ACC88009C8055 /* FreePlayButton.swift */,
+				3D0544B12A0ACC96009C8055 /* SettingsButton.swift */,
+				3D0544B32A0ACCA4009C8055 /* GamesButton.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		3D0544B52A0ACCC0009C8055 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544B62A0ACCD4009C8055 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3D0544B82A0ACCE1009C8055 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				3D0544B92A0ACCF0009C8055 /* Game1.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		3D2D77322A0D52AC00C4AAEC /* InstrumentEQViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InstrumentEQViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D0544562A0AC8BF009C8055 /* MixLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D0544652A0AC8C0009C8055 /* Build configuration list for PBXNativeTarget "MixLab" */;
+			buildPhases = (
+				3D0544532A0AC8BF009C8055 /* Sources */,
+				3D0544542A0AC8BF009C8055 /* Frameworks */,
+				3D0544552A0AC8BF009C8055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixLab;
+			packageProductDependencies = (
+				3D05446E2A0ACA15009C8055 /* AudioKit */,
+				3D0544712A0ACA22009C8055 /* AudioKitEX */,
+				3D0544742A0ACA38009C8055 /* AudioKitUI */,
+				3D0544772A0ACA44009C8055 /* Controls */,
+				3D05447A2A0ACA50009C8055 /* Flow */,
+				3D05447D2A0ACA5F009C8055 /* SoundpipeAudioKit */,
+			);
+			productName = MixLab;
+			productReference = 3D0544572A0AC8BF009C8055 /* MixLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D05444F2A0AC8BF009C8055 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3D0544562A0AC8BF009C8055 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 3D0544522A0AC8BF009C8055 /* Build configuration list for PBXProject "MixLab" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D05444E2A0AC8BF009C8055;
+			packageReferences = (
+				3D05446D2A0ACA15009C8055 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				3D0544702A0ACA22009C8055 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				3D0544732A0ACA38009C8055 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				3D0544762A0ACA44009C8055 /* XCRemoteSwiftPackageReference "Controls" */,
+				3D0544792A0ACA50009C8055 /* XCRemoteSwiftPackageReference "Flow" */,
+				3D05447C2A0ACA5F009C8055 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
+			productRefGroup = 3D0544582A0AC8BF009C8055 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D0544562A0AC8BF009C8055 /* MixLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D0544552A0AC8BF009C8055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0544BE2A0ACD27009C8055 /* Samples in Resources */,
+				3D0544832A0ACAAD009C8055 /* LaunchScreen.storyboard in Resources */,
+				3D0544622A0AC8C0009C8055 /* Preview Assets.xcassets in Resources */,
+				3D05445F2A0AC8C0009C8055 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D0544532A0AC8BF009C8055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2D772D2A0D3CD700C4AAEC /* RoomSheet.swift in Sources */,
+				3D0544942A0ACB3C009C8055 /* Lesson12.swift in Sources */,
+				3D0544A92A0ACC07009C8055 /* EQSheet.swift in Sources */,
+				3D0544BA2A0ACCF0009C8055 /* Game1.swift in Sources */,
+				3D0544B42A0ACCA4009C8055 /* GamesButton.swift in Sources */,
+				3D0544692A0AC99E009C8055 /* AppDelegate.swift in Sources */,
+				3D0544902A0ACB1C009C8055 /* Lesson1.swift in Sources */,
+				3D73415F2A0ADDF30004AEC4 /* LessonProgress.swift in Sources */,
+				3D0544BC2A0ACD0F009C8055 /* ComingSoon.swift in Sources */,
+				3D0544852A0ACABD009C8055 /* ContentView.swift in Sources */,
+				3D0544A02A0ACBB1009C8055 /* BassSheet.swift in Sources */,
+				3D05448C2A0ACB00009C8055 /* LessonView.swift in Sources */,
+				3D0544802A0ACA7B009C8055 /* ButtonStyles.swift in Sources */,
+				3D0544992A0ACB77009C8055 /* MixerView.swift in Sources */,
+				3D0544A52A0ACBE3009C8055 /* GainSheet.swift in Sources */,
+				3D0544892A0ACAE4009C8055 /* NewView2.swift in Sources */,
+				3D0544AB2A0ACC19009C8055 /* BandView.swift in Sources */,
+				3D0544A22A0ACBBF009C8055 /* GuitarSheet.swift in Sources */,
+				3D0544922A0ACB2A009C8055 /* Lesson2.swift in Sources */,
+				3D05449D2A0ACB98009C8055 /* InstrumentSelectView.swift in Sources */,
+				3D0544B22A0ACC96009C8055 /* SettingsButton.swift in Sources */,
+				3D05449B2A0ACB86009C8055 /* FaderView.swift in Sources */,
+				3D0544C02A0ACE48009C8055 /* LessonAudioEngine.swift in Sources */,
+				3D05448E2A0ACB0E009C8055 /* HoldingView.swift in Sources */,
+				3D0544872A0ACAD3009C8055 /* NewView.swift in Sources */,
+				3D05446C2A0AC9CF009C8055 /* MixerClass.swift in Sources */,
+				3D0544B72A0ACCD4009C8055 /* SettingsView.swift in Sources */,
+				3D0544B02A0ACC88009C8055 /* FreePlayButton.swift in Sources */,
+				3D0544A72A0ACBFC009C8055 /* PanSheet.swift in Sources */,
+				3D0544AE2A0ACC75009C8055 /* LessonsButton.swift in Sources */,
+				3D05445B2A0AC8BF009C8055 /* MixLabApp.swift in Sources */,
+				3D0544972A0ACB69009C8055 /* MainMixerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D0544632A0AC8C0009C8055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D0544642A0AC8C0009C8055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D0544662A0AC8C0009C8055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 327;
+				DEVELOPMENT_ASSET_PATHS = "\"MixLab/Preview Content\"";
+				DEVELOPMENT_TEAM = TR47HR79G6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MixLab;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WPMusic.MixLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3D0544672A0AC8C0009C8055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 327;
+				DEVELOPMENT_ASSET_PATHS = "\"MixLab/Preview Content\"";
+				DEVELOPMENT_TEAM = TR47HR79G6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MixLab;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WPMusic.MixLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D0544522A0AC8BF009C8055 /* Build configuration list for PBXProject "MixLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0544632A0AC8C0009C8055 /* Debug */,
+				3D0544642A0AC8C0009C8055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D0544652A0AC8C0009C8055 /* Build configuration list for PBXNativeTarget "MixLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0544662A0AC8C0009C8055 /* Debug */,
+				3D0544672A0AC8C0009C8055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D05446D2A0ACA15009C8055 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3D0544702A0ACA22009C8055 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3D0544732A0ACA38009C8055 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
+		3D0544762A0ACA44009C8055 /* XCRemoteSwiftPackageReference "Controls" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Controls.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		3D0544792A0ACA50009C8055 /* XCRemoteSwiftPackageReference "Flow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Flow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		3D05447C2A0ACA5F009C8055 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D05446E2A0ACA15009C8055 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D05446D2A0ACA15009C8055 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		3D0544712A0ACA22009C8055 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0544702A0ACA22009C8055 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		3D0544742A0ACA38009C8055 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0544732A0ACA38009C8055 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+		3D0544772A0ACA44009C8055 /* Controls */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0544762A0ACA44009C8055 /* XCRemoteSwiftPackageReference "Controls" */;
+			productName = Controls;
+		};
+		3D05447A2A0ACA50009C8055 /* Flow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0544792A0ACA50009C8055 /* XCRemoteSwiftPackageReference "Flow" */;
+			productName = Flow;
+		};
+		3D05447D2A0ACA5F009C8055 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D05447C2A0ACA5F009C8055 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3D05444F2A0AC8BF009C8055 /* Project object */;
+}
